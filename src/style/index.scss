@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+$color-red: rgb(212, 13, 53);
+$color-white: rgb(255, 255, 255);
+$color-black: rgb(0, 0, 0);
+
+body {
+  background-color: $color-black;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h1 a {
+  font-weight: 700;
+  color: $color-red!important;
+}
+
+@mixin whitecolor {
+  color: $color-white;
+}
+
+h2{
+  @include whitecolor;
+  font-weight: 600;
+}
+
+p, h5{
+  @include whitecolor;
+  font-weight: 500;
+  vertical-align: center;
+}
+
+
+h1 a, h1 a:visited, section a, section a:visited {
+	text-decoration: none;
+	position: relative;
+	color: $color-red;
+	
+	&:after {
+		content: '';
+		height: 3px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		background: $color-red;
+		transition: 0.2s;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+	
+	&.block {
+		display: block;
+		padding: 0.5em;
+		
+		&:hover {
+			background: #eee;
+		}
+	}
+}
+
+input{
+  background-color: transparent;
+  color: $color-white;
+  border: none;
+  width: fit-content;
+  display: block;
+}
+
+input:focus{
+  outline: none;
+}
+
+.searchbar{
+  display: flex;
+  align-items: center;
+  background-color: $color-black;
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: 1px solid $color-white;
+  max-width: max-content;
+}
+
+#searchbtn{
+  color: $color-white;
+  cursor: pointer;
+  filter: grayscale(1);
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+
+.plateform{
+  display: flex;
+  align-items: center;
+  background-color: $color-red;
+  width: fit-content;
+  padding: 15px 10px 15px 25px;
+  align-items: center;
+}
+
+select, option{
+  margin: 0 0 0 5px;
+  color: $color-white;
+  border: none;
+  background-color: $color-red;
+  vertical-align: center;
+  position: relative;
+}
+
+.platformname{
+  margin: 0;
+}
+
+#platformselect select{
+  display: none; 
+}
+
+.center{
+  text-align: center;
+  color: $color-white;
+  margin: 50px 0;
+}
+
+.imgbox{
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.imgbox:hover{
+
+  & .info{
+    box-shadow :  0px 0px 20px 5px #FFFFFF;
+    visibility: visible;
+  }
+
+  & .cardGame{
+    height: fit-content;
+  }
+
+  & .pop{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.card-img-top{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: -1;
+  min-height: 152px;
+}
+
+.alist{
+  padding: 0!important;
+}
+
+.info{
+  width: 400px;
+  min-height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0,0,0);
+}
+
+.novideo{
+  background-color: rgba(32, 32, 32, 0.7)!important;
+  box-shadow : none!important;
+  bottom: 0!important;
+}
+
+.tag{
+  font-size: 12px;
+}
+
+.icon-platform{
+  font-size: 15px;
+  margin: 0 10px 0 0;
+}
+
+#platformdiv{
+    display: none;
+}
+
+#buttonShow{
+  color: $color-white;
+  border: none;
+  background-color: $color-red;
+  padding: 15px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width :400px;
+}
+
+.cardGame{
+  position: relative;
+  z-index: 1;
+  animation-fill-mode: forwards;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: 250ms;
+}
+
+.opacity{
+  transform: translateX(0);
+  opacity: 1!important;
+}
+
+path, svg{
+  cursor: pointer;
+}
+
+#whereyouare{
+  display: none;
+}
+
+#présentation{
+  display: none;
+}
+
+#footer{
+  width: fit-content;
+}
+
+.red{
+  height: 10px;
+  background-color: $color-red;
+  width: 20%;
+}
+
+/*PAGE DETAIL*/
+
+.title{
+  font-size: 40px;
+  color: $color-white;
+}
+
+.rating{
+  color: $color-red;
+  font-size: 30px
+}
+
+.background{
+  position : relative
+}
+
+#website{
+  position:absolute;
+  right: 20px;
+  bottom : 20px;
+  display: inline-block;
+  background-color:$color-red;
+  color: $color-white;
+  padding:10px 25px;
+  border: none;
+}
+
+.pop{
+  opacity: 0;
+  transform:translateY(200px);
+  transition: 0.3s ease-in;
+  background-color: rgb(0,0,0);
+}
+
+video{
+  position: relative;
+  z-index:200;
+}
