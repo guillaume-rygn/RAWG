@@ -16,7 +16,7 @@ const PageDetail = (argument) => {
       document.getElementById("transition").classList.add("on");
       setTimeout(function(){
         document.getElementsByClassName("page-detail")[0].style.opacity = 1;
-      },300)
+      },500)
       const articleDOM = document.querySelector(".page-detail .article");
       articleDOM.querySelector("div.background").style.background = `url(${background_image})`;
       articleDOM.querySelector("div.background").style.height = `50vh`;
@@ -122,7 +122,7 @@ const PageDetail = (argument) => {
 
   const render = () => {
     pageContent.innerHTML = `
-    <div style="position:absolute; z-index:1000; height:100%; width:100vw; background-color: rgb(212, 13, 53); transition: 1s ease; transform: translateX(-120vw)" id="transition"></div>
+    <div style="position:absolute; z-index:1000; height:100%; width:200vw; background-color: rgb(212, 13, 53); transition: 1s ease-in; transform: translateX(-220vw)" id="transition"></div>
       <section class="page-detail">
        <div class="article">
         <div class="background"><a id="website" href="" target="_blank">Check Website ></a></div>
