@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/guillaume-rygn/The-Hyper-Programe"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Video-Game-Controller-Icon-IDV-green.svg/800px-Video-Game-Controller-Icon-IDV-green.svg.png" alt="EmojiFace" width="800"></a>
+  <a href="https://github.com/guillaume-rygn/The-Hyper-Programe"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Video-Game-Controller-Icon-IDV-green.svg/800px-Video-Game-Controller-Icon-IDV-green.svg.png" alt="EmojiFace" width="200"></a>
   <br>
 THE HYPER PROGRAME<br>
 </h1>
