@@ -6,7 +6,6 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 import routes from './routes';
 
-
 let search = document.getElementById("searchinput");
 
 
@@ -52,7 +51,3 @@ document.getElementById("title").addEventListener("click", () => {
     a.href = `#search/${search.value}`;
     a.click();
 })
-
-const swup = new Swup({
-  plugins: [new SwupOverlayTheme()]
-});

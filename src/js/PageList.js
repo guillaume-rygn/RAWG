@@ -198,7 +198,7 @@ document.querySelectorAll("option").forEach(element =>{
 
         if(argument.length == 1 && all.split("-")[1] === "platform"){
           document.getElementById("contenttitle").textContent = `PLatform : ${iconName[argument]}`
-          fetch(`https://api.rawg.io/api/games?key=${process.env.API_KEY}&parent_platforms=${argument}&page_size=9&page=${page}&dates=2021-12-01,2022-12-31&ordering=-released`)
+          fetch(`https://api.rawg.io/api/games?key=${process.env.API_KEY}&parent_platforms=${argument}&page_size=9&page=${page}&dates=2021-01-01,2022-05-06&ordering=-released`)
             .then((response) => response.json())
             .then((responseData) => {
               max = responseData.count;
